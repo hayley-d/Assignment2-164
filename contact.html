@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <!--Icon-->
+    <link rel="icon" href="img/SVG/pug-svgrepo-com.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/SVG/pug-svgrepo-com.svg" type="image/x-icon">
+    <!--stylesheet link-->
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <!--link to fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300;400&family=Playfair+Display:wght@500&family=Righteous&family=Roboto+Condensed&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--navbar-->
+<div class = "navbar">
+    <div id = "heading"><h1>My Portfolio</h1></div>
+    <div id = "home-btn" class="navbtn"><a href = "index.html"><h2>Home</h2></a></div>
+    <div id = "about-btn" class = "navbtn"><a href = "about.html"><h2>About</h2></a></div>
+    <div id = "contact-btn" class = "navbtn"><a href = "contact.html"><h2 class = "active">Contact</h2></a></div>
+</div>
+
+<br/>
+
+<div class = "blank"></div>
+
+<div class="form-container">
+    <h1>Contact Me</h1>
+    <form  method="POST" onsubmit="return validateForm()">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter message here" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<div class = "blank"></div>
+<!--footer-->
+<div class = "footer">
+    <div id = "footer-links">
+        <div><a href = "index.html"><p>Home</p></a></div>
+        <div><a href = "about.html"><p>About</p></a></div>
+        <div><a href = "contact.html"><p>Contact</p></a></div>
+    </div>
+    <div id = "socials">
+        <div><a href = "https://www.instagram.com/hayely_d/"><div id = "instagram"></div></a></div>
+        <div><a href = "https://www.youtube.com/channel/UCFM_xJqpfFQ6_LFuvn3hLgg"><div id = "youtube"></div></a></div>
+    </div>
+</div>
+<!--JavaScript Link-->
+<script src = "js/contact.js"></script>
+</body>
+</html>
