@@ -1,0 +1,502 @@
+
+body{
+    background-color: black;
+    /*font*/
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../img/background1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*navbar div to contain heading and links*/
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Define 3 columns */
+    grid-template-rows: 1fr;/*1 row*/
+    gap:2vh;
+
+    background-color: white;
+    width:100%;
+    height:8vh;
+    padding:10px;
+}
+
+#heading{
+    height:7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    column-span: 2;
+    font-family: 'Parisienne', cursive;
+    font-size: 1.5rem;
+}
+/*ffa8bd*/
+#home-btn{
+    height:7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#about-btn{
+    height:7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#contact-btn{
+    height:7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.navbtn:hover{
+    color: #ffa8bd;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.active{
+    border-bottom: 2px solid #ffa8bd;
+    font-weight: bold;
+}
+
+
+
+/*footer css*/
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width:100%;
+    height:12vh;
+    padding:10px;
+    background-color: white;
+}
+
+#footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5vh;
+    font-size: large;
+}
+
+#socials{
+
+    display: flex;
+    gap:5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#instagram{
+    background-image: url("../img/instagram.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width:40px;
+    height:40px;
+}
+#youtube{
+    background-image: url("../img/youtube.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width:40px;
+    height:40px;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height:10vh;
+    font-size: xxx-large;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Parisienne', cursive;
+    padding:20px;
+
+}
+
+.about-me{
+    color: white;
+    width:100%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    /*margin-left:15%;
+    margin-right:15%;*/
+}
+
+.about-me > div{
+    width:60%;
+}
+
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+    margin-left:30%;
+    margin-right:30%;
+    color: white;
+
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width:70%;
+}
+
+.hobby-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width:170px;
+    height:170px;
+    background-color: #ffa8bd;
+    border-radius: 100px;
+}
+
+.hobby-name{
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xxx-large;
+    font-family: 'Parisienne', cursive;
+
+}
+
+.hobby-desc{
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#bikini{
+    background-image: url("../img/gym.PNG");
+}
+
+#pug{
+    background-image: url("../img/Hayley_and_sav.jpg");
+}
+
+#yoga{
+    background-image: url("../img/yoga.PNG");
+}
+
+.hobbies ul{
+    list-style: none;
+    display: flex; /* Make the list a flex container */
+    flex-direction: column;
+    gap:50px;
+    justify-content: space-between; /* Example: Distribute items evenly */
+    align-items: center; /* Example: Center items vertically */
+    padding: 0; /* Remove default list padding */
+}
+
+.hobbies li{
+    display: flex; /* Make the list a flex container */
+    flex-direction: column;
+    gap:50px;
+    justify-content: space-between; /* Example: Distribute items evenly */
+    align-items: center; /* Example: Center items vertically */
+    padding: 0; /* Remove default list padding */
+    font-size: large;
+}
+
+.blank{
+    height:10vh;
+    width:100%;
+}
+
+.facts{
+    margin:30px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    gap:0;
+}
+
+ol {
+    /*background-color: #ffa8bd;*/
+    list-style-type: decimal;
+    font-size: x-large;
+    font-family: 'Parisienne', cursive;
+    display: flex; /* Make the list a flex container */
+    flex-direction: column;
+    justify-content: left; /* Example: Distribute items evenly */
+    align-items: normal;
+    margin-left: 15%; /* Remove default list padding */
+    margin-right: 10%; /* Remove default list padding */
+}
+
+.facts li{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px; /* Adjust the spacing between items */
+}
+
+.fact-pic{
+    background-image: url("../img/sloth.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width:400px;
+    height:400px;
+    background-color: #ffa8bd;
+    border-radius: 10px;
+    flex-shrink: 0; /* Prevent containers from shrinking */
+    transition: background-image 0.5s ease; /* Smooth background image transition */
+}
+
+.fact-pic2{
+    background-image: url("../img/sloth.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width:400px;
+    height:400px;
+    background-color: #ffa8bd;
+    border-radius: 10px;
+    flex-shrink: 0; /* Prevent containers from shrinking */
+    transition: background-image 0.5s ease; /* Smooth background image transition */
+}
+
+.counter-container{
+    width:100%;
+    height:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-box{
+    width:60%;
+    height:50vh;
+    background-image: url("../img/sloths/sloth3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-color: #ffa8bd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3vh;
+}
+
+.counter-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5vh;
+}
+
+#dec-btn button{
+    border: none;
+    width:100px;
+    height:50px;
+    border-radius: 5px;
+    font-size: xxx-large;
+    background-color: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#inc-btn button{
+    border: none;
+    width:100px;
+    height:50px;
+    border-radius: 5px;
+    font-size: xxx-large;
+    background-color: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#inc-btn button:hover{
+    cursor: pointer;
+    color: #ffa8bd;
+}
+
+#dec-btn button:hover{
+    cursor: pointer;
+    color: #ffa8bd;
+}
+
+#counter-num{
+    font-size: xxx-large;
+    /*font-family: 'Poppins', sans-serif;*/
+    color: white;
+}
+
+.counter-heading{
+    color: white;
+    font-size: x-large;
+    /*font-family: 'Poppins', sans-serif;*/
+}
+
+/*media query*/
+@media (max-width: 1320px) and (min-width: 1100px){
+    #heading{
+        font-size: 1rem;
+    }
+
+    .header{
+        font-size: x-large;
+    }
+
+    .about-me{
+        font-size: medium;
+    }
+    .hobby-img{
+        width:150px;
+        height:150px;
+    }
+
+    .hobby-name{
+        font-size: 2.5rem;
+    }
+
+    .hobby-desc{
+        font-size: medium;
+    }
+    .hobbies{
+        gap:50px;
+        margin-left:20%;
+        margin-right:20%;
+        color: white;
+    }
+
+    ol {
+        font-size: large;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 800px){
+    #heading{
+        font-size: 1rem;
+    }
+
+    .header{
+        font-size: x-large;
+    }
+
+    .about-me{
+        font-size: medium;
+    }
+    .hobby-img{
+        width:150px;
+        height:150px;
+    }
+
+    .hobby-name{
+        font-size: 2rem;
+    }
+
+    .hobby-desc{
+        font-size: medium;
+    }
+    .hobbies{
+        gap:50px;
+        margin-left:20%;
+        margin-right:20%;
+        color: white;
+    }
+
+    ol {
+        font-size: medium;
+    }
+
+    .about-me > div{
+        width:80%;
+    }
+
+    .row{
+        width:90%;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 200px){
+    #heading{
+        font-size: 1rem;
+    }
+
+    .header{
+        font-size: large;
+    }
+
+    .about-me{
+        font-size: medium;
+    }
+    .hobby-img{
+        width:150px;
+        height:150px;
+    }
+
+    .hobby-name{
+        font-size: 2rem;
+    }
+
+    .hobby-desc{
+        font-size: medium;
+    }
+    .hobbies{
+        gap:50px;
+        margin-left:20%;
+        margin-right:20%;
+        color: white;
+    }
+
+    ol {
+        font-size: medium;
+    }
+
+    .about-me > div{
+        width:80%;
+    }
+
+    .row{
+        width:90%;
+    }
+
+    .fact-pic{
+        width:200px;
+        height:200px;
+    }
+
+    .facts{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}

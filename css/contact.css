@@ -1,0 +1,204 @@
+
+body{
+    background-color: black;
+    /*font*/
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../img/background1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*navbar div to contain heading and links*/
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Define 3 columns */
+    grid-template-rows: 1fr;/*1 row*/
+    gap:2vh;
+
+    background-color: white;
+    width:100%;
+    height:8vh;
+    padding:10px;
+}
+
+#heading{
+    height:7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    column-span: 2;
+    font-family: 'Parisienne', cursive;
+    font-size: 1.5rem;
+}
+/*ffa8bd*/
+#home-btn{
+    height:7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#about-btn{
+    height:7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#contact-btn{
+    height:7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.navbtn:hover{
+    color: #ffa8bd;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.active{
+    border-bottom: 2px solid #ffa8bd;
+    font-weight: bold;
+}
+
+/*media query*/
+@media (max-width: 1320px) and (min-width: 200px){
+    #heading{
+        font-size: 1rem;
+    }
+}
+
+/*footer css*/
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width:100%;
+    height:12vh;
+    padding:10px;
+    background-color: white;
+}
+
+#footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5vh;
+    font-size: large;
+}
+
+#socials{
+
+    display: flex;
+    gap:5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#instagram{
+    background-image: url("../img/instagram.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width:40px;
+    height:40px;
+}
+#youtube{
+    background-image: url("../img/youtube.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width:40px;
+    height:40px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.form-container {
+    width: 30%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    border-radius: 15px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+    font-family: 'Montserrat', sans-serif;
+}
+button[type="submit"] {
+    background-color: #ffa8bd;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+button[type="submit"]:hover {
+    background-color: gray;
+}
+
+.blank{
+    height:10vh;
+    width:100%;
+}
+
+/* Remove the outline completely */
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* Remove the outline completely */
+input[type="text"]:focus,
+input:focus {
+    outline: none;
+}
+
+.form-container h1{
+    font-family: 'Parisienne', cursive;
+    font-size: xxx-large;
+}
