@@ -28,83 +28,111 @@
     <div id = "contact-btn" class = "navbtn"><a href = "contact.html"><h2>Contact</h2></a></div>
 </div>
 <div class = "blank"></div>
-<div class = "header"><div><h1>About Me</h1></div></div>
-<!--description about myself-->
-<div class = "about-me">
-    <div><p>
-        My name is Hayley and I'm a computer science student at the University of pretoria. From the moment I wrote my first line of code at the age of 13, I was drawn to the mesmerizing world of programming.
-        The essence of coding, for me, lies in its logic. It's the art of breaking down a problem into smaller, manageable pieces and meticulously crafting solutions that fit together like the pieces of a puzzle.
-        Every line of code I write is a testament to my love for the logical reasoning that underpins it. I relish the challenge of finding elegant and efficient solutions, of optimizing algorithms, and of thinking critically to
-        tackle even the most daunting of tasks. The process of coding is not just about making things work; it's about making them work brilliantly.
-        Coding isn't just a skill; it's a passion that fuels my curiosity, sharpens my analytical thinking, and constantly challenges me to evolve.
-        It's a journey where every line of code is a step forward, every problem is an opportunity, and every solution is a source of pride.
-    </p></div>
+
+<!--pictures are placed in divs instead of img elements for the following reasons-->
+<!--1. allows for more advanced background positioning and sizing options-->
+<!--2. Allows me to add additional elements (like text) in the image.-->
+<!--3. Using div elements allows me to have greater control over responsive images.-->
+<div class = "about-area">
+<div class = "about">
+    <div id = "about-hayley"></div>
+
+    <div class = "about-text">
+        <div class = "header" id = "about-head"><div><h1>About Me</h1></div></div>
+        <!--description about myself-->
+        <div class = "about-me">
+            <div><p>
+                My name is Hayley and I'm a computer science student at the University of pretoria. From the moment I wrote my first line of code at the age of 13, I was drawn to the mesmerizing world of programming.
+                The essence of coding, for me, lies in its logic. It's the art of breaking down a problem into smaller, manageable pieces and meticulously crafting solutions that fit together like the pieces of a puzzle.
+                Every line of code I write is a testament to my love for the logical reasoning that underpins it. I relish the challenge of finding elegant and efficient solutions, of optimizing algorithms, and of thinking critically to
+                tackle even the most daunting of tasks. The process of coding is not just about making things work; it's about making them work brilliantly.
+                Coding isn't just a skill; it's a passion that fuels my curiosity, sharpens my analytical thinking, and constantly challenges me to evolve.
+                It's a journey where every line of code is a step forward, every problem is an opportunity, and every solution is a source of pride.
+            </p></div>
+        </div>
+    </div>
+
 </div>
+</div>
+
+<!--spancing between different sections-->
+<div class = "blank"></div>
 <div class = "blank"></div>
 
 <!--hobbies unordered list-->
-<div class = "header"><div><h1>Hobbies</h1></div></div>
-<div class = "hobbies">
-    <ul>
-        <li>
-            <div class = "row">
-                <div class = "hobby-img" id = "bikini"></div>
-                <div class = "hobby-name">Bikini Bodybuilding</div>
-                <div class = "hobby-desc">
-                    <p>Bikini bodybuilding is more than just building a great physique; it's about building character. It has taught me the importance of setting goals, overcoming obstacles, and pushing my limits.
-                        The mental fortitude I've developed in this pursuit has transcended into other areas of my life, making me more resilient, focused, and determined.
-                    </p>
-                </div>
-            </div>
-        </li>
-        <li><br/></li>
-        <li>
-            <div class = "row">
-                <div class = "hobby-img" id = "pug"></div>
-                <div class = "hobby-name">Volunteering</div>
-                <div class = "hobby-desc">
-                    <p>My experience volunteering at the Pug rescue has taught me invaluable lessons about empathy, compassion, and the profound impact that small acts of kindness can have on the lives of animals in need.
-                        It's a reminder that even in the face of challenges, there is hope, and together, we can make a difference—one Pug at a time.
-                    </p>
-                </div>
-            </div>
-        </li>
-        <li><br/></li>
-        <li>
-            <div class = "row">
-                <div class = "hobby-img" id = "yoga"></div>
-                <div class = "hobby-name">Yoga</div>
-                <div class = "hobby-desc">
-                    <p>Yoga isn't just a hobby, it's a lifelong passion that has enriched my life in countless ways. It's a reminder that growth, both on and off the mat, is a continuous journey.
-                        The discipline and mindfulness cultivated through yoga have not only improved my physical health but have also had a profound impact on my mental and emotional well-being.
-                    </p>
-                </div>
-            </div>
-        </li>
-    </ul>
+<div id = "hobby-container">
+    <div id = "hobby-content">
+        <div class = "header" id = "hobby-heading"><div><h1>Hobbies</h1></div></div>
+        <div class = "hobbies">
+            <ul>
+                <li>
+                    <div class = "row">
+                        <div class = "row-heading">
+                            <div class = "hobby-img" id = "bikini"></div>
+                            <div class = "hobby-name">Bodybuilding</div>
+                        </div>
+                        <div class = "hobby-desc">
+                            <p>Bikini bodybuilding is more than just building a great physique; it's about building character. It has taught me the importance of setting goals, overcoming obstacles, and pushing my limits.
+                                The mental fortitude I've developed in this pursuit has transcended into other areas of my life, making me more resilient, focused, and determined.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li><br/></li>
+                <li>
+                    <div class = "row">
+                        <div class = "row-heading">
+                            <div class = "hobby-img" id = "pug"></div>
+                            <div class = "hobby-name">Volunteering</div>
+                        </div>
+                        <div class = "hobby-desc">
+                            <p>My experience volunteering at the Pug rescue has taught me invaluable lessons about empathy, compassion, and the profound impact that small acts of kindness can have on the lives of animals in need.
+                                It's a reminder that even in the face of challenges, there is hope, and together, we can make a difference—one Pug at a time.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li><br/></li>
+                <li>
+                    <div class = "row">
+                        <div class = "row-heading">
+                            <div class = "hobby-img" id = "yoga"></div>
+                            <div class = "hobby-name">Yoga</div>
+                        </div>
+                        <div class = "hobby-desc">
+                            <p>Yoga isn't just a hobby, it's a lifelong passion that has enriched my life in countless ways. It's a reminder that growth, both on and off the mat, is a continuous journey.
+                                The discipline and mindfulness cultivated through yoga have not only improved my physical health but have also had a profound impact on my mental and emotional well-being.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
 
+        </div>
+    </div>
 </div>
 <div class = "blank"></div>
 
 <!--fun facts about me-->
-<div class = "header"><div><h1>Fun Facts About Me!</h1></div></div>
-<div class = "facts">
-    <div class = "fact-pic"></div>
-    <div>
-        <ol>
-            <li>Sloths hold a special place in my heart as my favorite animal.</li>
-            <li>I love gaming, Rainbow Six Siege is my favorite game.</li>
-            <li>My favorite pokemon is Chansey.</li>
-            <li>I have one tattoo.</li>
-            <li>I collect comic books.</li>
-            <li>The color pink is a personal favorite of mine.</li>
-            <li>I love Pineapple on pizza.</li>
-            <li>I have a hedgehog called Mocha.</li>
-            <li>There's nothing better than waffles with ice cream.</li>
-            <li>I built my computer.</li>
-        </ol>
+<div id = "facts-container">
+    <div id = "fact-area">
+        <div class = "header" id = "fact-heading"><div><h1>Fun Facts About Me!</h1></div></div>
+        <div id = "fact-list">
+            <ol>
+                <li>Sloths hold a special place in my heart as my favorite animal.</li>
+                <li>AOE4, Rainbow, and The Witcher are some of my favorite games.</li>
+                <li>My favorite Pokémon is Chansey.</li>
+                <li>I'm a huge Liverpool fan.</li>
+                <li>My comic book collection consists of mostly DC comics.</li>
+                <li>The color pink is a personal favorite of mine.</li>
+                <li>Pineapple on pizza? Count me in – it's a sweet and savory masterpiece.</li>
+                <li>I love travelling, England is my absolute favorite destination!</li>
+                <li>Phoebe Hagan is my role model.</li>
+                <li>I custom-built my gaming PC.</li>
+            </ol>
+        </div>
     </div>
-    <!--<div class = "fact-pic2"></div>-->
+    <div class = "fact-pic"></div>
 </div>
 <div class = "blank"></div>
 
