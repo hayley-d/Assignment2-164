@@ -19,7 +19,7 @@ activeHover();
 
 
 
-const imgArr = ["../img/tattoo.PNG","../img/mocha.PNG","../img/gym2.PNG","../img/sloth.jpg","../img/waffle.png"];
+const imgArr = ["./img/tattoo.PNG","./img/mocha.PNG","./img/gym2.PNG","./img/sloth.jpg","./img/waffle.png"];
 var count = 0;
 function changeImage(){
 
@@ -53,7 +53,7 @@ setInterval(changeImage2, 3000);
 
 var counter = -1;
 var arrCount = 0;
-const slothArr = ["../img/sloths/sloth1.png","../img/sloths/sloth2.png","../img/sloths/sloth3.png","../img/sloths/sloth4.png","../img/sloths/sloth5.png","../img/sloths/sloth6.png","../img/sloths/sloth7.png","../img/sloths/sloth8.png","../img/sloths/sloth9.png","../img/sloths/sloth10.png"]
+const slothArr = ["./img/sloths/sloth1.png","./img/sloths/sloth2.png","./img/sloths/sloth3.png","./img/sloths/sloth4.png","./img/sloths/sloth5.png","./img/sloths/sloth6.png","./img/sloths/sloth7.png","./img/sloths/sloth8.png","./img/sloths/sloth9.png","./img/sloths/sloth10.png"]
 function inc()
 {
     const box = document.getElementsByClassName("counter-box")[0];
