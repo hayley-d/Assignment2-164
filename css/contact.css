@@ -71,12 +71,7 @@ a{
     font-weight: bold;
 }
 
-/*media query*/
-@media (max-width: 1320px) and (min-width: 200px){
-    #heading{
-        font-size: 1rem;
-    }
-}
+
 
 /*footer css*/
 .footer{
@@ -132,7 +127,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: white;
     border-radius: 15px;
-    padding:20px;
+    padding:10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,7 +135,13 @@ body {
 }
 .form-group {
     margin-bottom: 20px;
+
 }
+
+form{
+    width:60%;
+}
+
 label {
     display: block;
     font-weight: bold;
@@ -150,7 +151,7 @@ label {
 input[type="text"],
 textarea {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -168,6 +169,7 @@ textarea {
     height: 150px;
     font-family: 'Montserrat', sans-serif;
 }
+
 button[type="submit"] {
     background-color: #ffa8bd;
     color: #fff;
@@ -201,4 +203,56 @@ input:focus {
 .form-container h1{
     font-family: 'Parisienne', cursive;
     font-size: xxx-large;
+}
+
+/*media query*/
+@media (max-width: 1340px) and (min-width: 900px){
+    #heading{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 900px){
+    .form-container {
+        width: 40%;
+
+    }
+
+}
+
+@media (max-width: 900px) and (min-width: 700px){
+    .form-container {
+        width: 50%;
+
+    }
+
+    #heading{
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 700px) and (min-width: 200px){
+    .form-container {
+        width: 60%;
+
+    }
+
+    #heading{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 700px) and (min-width: 200px){
+    .form-container {
+        width: 70%;
+    }
+
+    form{
+        width:80%;
+    }
+
+    #heading{
+        font-size: 0.9rem;
+    }
 }
