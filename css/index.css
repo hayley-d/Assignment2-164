@@ -133,8 +133,8 @@ a{
 
 #bio-text{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
     gap:3vh;
     grid-row-gap: 0;
     justify-content: center;
@@ -278,11 +278,54 @@ a{
     cursor: pointer;
 }
 
+
 /*media query*/
 @media (max-width: 1320px) and (min-width: 800px){
     #heading{
         font-size: 1rem;
     }
+    #profile-img{
+        height:320px;
+        width:320px;
+    }
+
+    #bio-text{
+        width: fit-content;
+        grid-row-gap: 0;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #bio-heading{
+       background-color: transparent;
+        text-align: center;
+        height:90px;
+    }
+
+    .bio{
+        height:60vh;
+        background-color: transparent;
+    }
+
+    .skill-grid{
+        gap:20px;
+        width:60%;
+    }
+
+    .project-grid{
+        width:60%;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        overflow: scroll;
+    }
+
+    /*education table*/
+    .education-grid{
+        width:60%;
+    }
+
 }
 
 /*media query*/
