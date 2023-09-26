@@ -18,6 +18,10 @@
 
 </head>
 <body>
+<!--pictures are placed in divs instead of img elements for the following reasons-->
+<!--1. allows for more advanced background positioning and sizing options-->
+<!--2. Allows me to add additional elements (like text) in the image.-->
+<!--3. Using div elements allows me to have greater control over responsive images.-->
 <!--navbar-->
 <div class = "navbar">
     <div id = "heading"><h1>My Portfolio</h1></div>
@@ -26,24 +30,29 @@
     <div id = "contact-btn" class = "navbtn"><a href = "contact.html"><h2>Contact</h2></a></div>
 </div>
 <div class = "blank"></div>
+
 <!--bio-->
 <div class = "bio">
-    <div id = "profile-img"></div>
-    <div id = "bio-text">
-        <div id = "bio-heading"><h2>Biography</h2></div>
-        <div id = "bio-headings">
-            <div><p>Name:</p></div>
-            <div><p>Age:</p></div>
-            <div><p>Address:</p></div>
-            <div><p>Phone:</p></div>
-            <div><p>Email:</p></div>
-        </div>
-        <div id = "bio-values">
-            <div><p>Hayley Dodkins</p></div>
-            <div><p id = "age">21</p></div>
-            <div><p>74 Cambridge Road, Bryanston</p></div>
-            <div><p><span><a href = "tel:+27674152597">+27 674 152 597</a></span></p></div>
-            <div><p><span><a href = "mailto:hayleydodkins2504@gmail.com">hayleydodkins2504@gmail.com</a></span></p></div>
+    <div id = "bio-area">
+        <div id = "profile-img"></div>
+        <div id = "bio-text">
+            <div id = "bio-heading"><h2>Biography</h2></div>
+            <div id="bio-info">
+                <div id = "bio-headings">
+                    <div><p>Name:</p></div>
+                    <div><p>Age:</p></div>
+                    <div><p>Address:</p></div>
+                    <div><p>Phone:</p></div>
+                    <div><p>Email:</p></div>
+                </div>
+                <div id = "bio-values">
+                    <div><p>Hayley Dodkins</p></div>
+                    <div><p id = "age">21</p></div>
+                    <div><p><span><a href = "https://www.google.com/maps/@35.7040744,139.5577317,3a,80.9y,292.44h,75.21t/data=!3m6!1e1!3m4!1sgT28ssf0BB2LxZ63JNcL1w!2e0!7i13312!8i6656?entry=ttu">74 Cambridge Road, Bryanston</a></span></p></div>
+                    <div><p><span><a href = "tel:+27674152597">+27 674 152 597</a></span></p></div>
+                    <div><p><span><a href = "mailto:hayleydodkins2504@gmail.com">hayleydodkins2504@gmail.com</a></span></p></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
