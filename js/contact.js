@@ -30,27 +30,29 @@ function validateForm() {
         alert('Name and Email are required fields.');
         return false; // Prevent form submission
     }
+    else {
+        const nameValue = nameInput.value.trim();
+        const emailValue = emailInput.value.trim();
+        const messageValue = document.getElementById("message").value.trim();
 
-    const nameValue = nameInput.value.trim();
-    const emailValue = emailInput.value.trim();
-    const messageValue = document.getElementById("message").value.trim();
+        console.log(`Name: ${nameValue}`);
+        console.log(`Email: ${emailValue}`);
+        console.log(`Message: ${messageValue}`);
 
-    console.log(`Name: ${nameValue}`);
-    console.log(`Email: ${emailValue}`);
-    console.log(`Message: ${messageValue}`);
-
-    alert(`Name: ${nameValue}` + "\n" + `Email: ${emailValue}`+ "\n" + `Message: ${messageValue}`)
-    return true; // Allow form submission
+        alert(`Name: ${nameValue}` + "\n" + `Email: ${emailValue}` + "\n" + `Message: ${messageValue}`)
+        return true; // Allow form submission
+    }
 }
 
-// Add input event listeners to enable/disable the submit button
+//input event listeners to enable/disable the submit button
 nameInput.addEventListener('input', toggleSubmitButton);
 emailInput.addEventListener('input', toggleSubmitButton);
-// Add a submit event listener to the form
+
+//submit event listener to the form
 document.querySelector('form').addEventListener('submit', function (e) {
     if (!validateForm()) {
-        e.preventDefault(); // Prevent form submission if validation fails
-    }
+        e.preventDefault(); // Prevent form submissi
+    }on if validation fails
 });
 
 // Function to toggle the submit button based on the input fields
@@ -61,6 +63,9 @@ function toggleSubmitButton() {
         submitButton.disabled = false;
     }
 }
+
+
+
 
 
 

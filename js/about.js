@@ -19,7 +19,7 @@ activeHover();
 
 
 
-const imgArr = ["./img/tattoo.PNG","./img/mocha.PNG","./img/gym2.PNG","./img/sloth.jpg","./img/waffle.png"];
+const imgArr = ["./img/travel.jpg","./img/liverpool.jpg","./img/computer.PNG","./img/sloth.jpg","./img/england.jpg"];
 var count = 0;
 function changeImage(){
 
@@ -36,7 +36,7 @@ function changeImage(){
 setInterval(changeImage, 3000);
 
 
-var count2 = 0;
+/*var count2 = 0;
 function changeImage2(){
 
     const element = document.getElementsByClassName("fact-pic2")[0];
@@ -49,7 +49,7 @@ function changeImage2(){
 }
 
 // Automatically advance to the next image every 3 seconds (3000 milliseconds).
-setInterval(changeImage2, 3000);
+setInterval(changeImage2, 3000);*/
 
 var counter = -1;
 var arrCount = 0;
@@ -132,4 +132,22 @@ incrementButton.addEventListener('click', inc);
 decButton.addEventListener('click', dec);
 inc();
 
+function adjustPictureHeight()
+{
+//this function adjusts the height of the picture so that it is the same height as the about me text area
+    const textArea = document.getElementsByClassName("about-text")[0];/*the text area*/
+    const textHeight = textArea.offsetHeight;/*the height in px of the text area*/
+    const picture = document.getElementById("about-hayley");/*the picture*/
+    picture.style.height = `${textHeight}px`;/*changing the height of the picture*/
 
+    /*also for the facts picture*/
+    const factArea = document.getElementById("fact-area");/*the text area*/
+    const factAreaHeight = factArea.offsetHeight;/*the height in px of the text area*/
+    const factPicture = document.getElementsByClassName("fact-pic")[0];/*the picture*/
+    factPicture.style.height = `${factAreaHeight}px`;/*changing the height of the picture*/
+}
+/*call to get the initial size of the image*/
+/*adjustPictureHeight();*/
+// event listener for the "resize" event
+window.addEventListener("resize", adjustPictureHeight);
+document.addEventListener('DOMContentLoaded',adjustPictureHeight);
