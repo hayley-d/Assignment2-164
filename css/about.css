@@ -7,6 +7,8 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 /*navbar div to contain heading and links*/
 .navbar{
@@ -147,23 +149,142 @@ a{
     width:60%;
 }
 
+
+.blank{
+    height:10vh;
+    width:100%;
+}
+
+
+
+
+.about{
+    /*display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
+    margin:50px;
+    column-gap: 0;
+    row-gap: 0;
+    height: 90vh;*/
+
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-hayley{
+    grid-row: span 2;
+    background-image: url("../img/travel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 15px;
+    width:27%;
+
+}
+
+.about-me{
+    width:100%;
+    color:black;
+    margin:0;
+}
+
+#about-head{
+    width: 100%;
+    color:black;
+}
+
+.about-area{
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height:fit-content;
+    width:40%;
+    margin-left: 15vh;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    color:black;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); /* Stronger white highlight */
+}
+
+.about-me > div{
+    width:90%;
+    /*background-color: #ffa8bd;*/
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*hobby styling*/
+#hobby-container{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hobby-content{
+    width:60%;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+#hobby-heading{
+    color: white;
+    font-weight: bold;
+}
+
 .hobbies{
     display: flex;
     flex-direction: column;
-    gap:50px;
+    gap:30px;
     justify-content: center;
     align-items: center;
-    margin-left:30%;
-    margin-right:30%;
-    color: white;
-
+    width:100%;
 }
 
 .row{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    width:70%;
+    width:80%;
+    background-color: white;
+    border-radius: 15px;
+    padding:10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); /* Stronger white highlight */
+}
+
+.row-heading{
+    grid-column: span 2;
+    width:100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height:fit-content;
+    gap:30px;
+    color:black;
+    text-align: center;
+
 }
 
 .hobby-img{
@@ -178,14 +299,13 @@ a{
 }
 
 .hobby-name{
-
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: xxx-large;
+    font-size: 4rem;
     font-family: 'Parisienne', cursive;
-
+    margin:auto;
 }
 
 .hobby-desc{
@@ -194,6 +314,7 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: black;
 }
 
 #bikini{
@@ -228,33 +349,56 @@ a{
     font-size: large;
 }
 
-.blank{
-    height:10vh;
+#facts-container{
     width:100%;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5vh;
 }
 
-.facts{
+#fact-area{
+    width:60%;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); /* Stronger white highlight */
+}
+
+#fact-list{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    width:95%;
+    /*background-color: #ffa8bd;*/
+    display: flex;
+    padding:10px;
+}
+
+/*.facts{
     margin:30px;
     color: white;
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
     gap:0;
-}
+}*/
 
 ol {
     /*background-color: #ffa8bd;*/
     list-style-type: decimal;
     font-size: x-large;
-    font-family: 'Parisienne', cursive;
     display: flex; /* Make the list a flex container */
     flex-direction: column;
-    justify-content: left; /* Example: Distribute items evenly */
+    justify-content: left;
     align-items: normal;
-    margin-left: 15%; /* Remove default list padding */
-    margin-right: 10%; /* Remove default list padding */
+
 }
 
-.facts li{
+#fact-list li{
     text-align: left;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px; /* Adjust the spacing between items */
@@ -274,19 +418,11 @@ ol {
     transition: background-image 0.5s ease; /* Smooth background image transition */
 }
 
-.fact-pic2{
-    background-image: url("../img/sloth.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    width:400px;
-    height:400px;
-    background-color: #ffa8bd;
-    border-radius: 10px;
-    flex-shrink: 0; /* Prevent containers from shrinking */
-    transition: background-image 0.5s ease; /* Smooth background image transition */
+#fact-heading{
+    font-size: 2rem;
+    color: black;
 }
+
 
 .counter-container{
     width:100%;
@@ -304,13 +440,15 @@ ol {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    background-color: #ffa8bd;
+    background-color: transparent;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:3vh;
+    transition: background-image 0.5s ease; /* Smooth background image transition */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); /* Stronger white highlight */
 }
 
 .counter-btns{
@@ -363,7 +501,6 @@ ol {
     font-size: x-large;
     /*font-family: 'Poppins', sans-serif;*/
 }
-
 /*media query*/
 @media (max-width: 1320px) and (min-width: 1100px){
     #heading{
@@ -378,12 +515,12 @@ ol {
         font-size: medium;
     }
     .hobby-img{
-        width:150px;
-        height:150px;
+        width:170px;
+        height:170px;
     }
 
     .hobby-name{
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .hobby-desc{
@@ -398,6 +535,190 @@ ol {
 
     ol {
         font-size: large;
+    }
+
+    .about{
+        display: flex;
+        height: 90vh;
+        justify-content: center;
+    }
+
+    #about-hayley{
+        grid-row: span 2;
+        background-image: url("../img/hayley1.JPG");
+        height:100vh;
+        width:40%;
+    }
+
+    .about-me{
+        width:100%;
+        color:black;
+        margin:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    #about-head{
+        width: 100%;
+        color:black;
+        height:60px;
+        /*background-color: #cccccc;*/
+    }
+
+    .about-area{
+        width: 90%;
+        height:fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+    }
+
+    .about-text{
+        /* display: grid;
+         grid-template-rows: 1fr 4fr;*/
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height:fit-content;
+        width:60%;
+        margin-left: 15vh;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 15px;
+        color:black;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); /* Stronger white highlight */
+    }
+
+    .about-me > div{
+        width:90%;
+        /*background-color: #ffa8bd;*/
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hobby-content{
+        width:60%;
+    }
+
+    #facts-container{
+        width:100%;
+        height:fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:5vh;
+    }
+
+    #fact-area{
+        width:60%;
+        height:fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); /* Stronger white highlight */
+    }
+
+    #fact-list{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        width:95%;
+        /*background-color: #ffa8bd;*/
+        display: flex;
+        padding:10px;
+    }
+
+    ol {
+        /*background-color: #ffa8bd;*/
+        list-style-type: decimal;
+        font-size: x-large;
+        display: flex; /* Make the list a flex container */
+        flex-direction: column;
+        justify-content: left;
+        align-items: normal;
+
+    }
+
+    #fact-list li{
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 20px; /* Adjust the spacing between items */
+    }
+
+
+
+    #fact-heading{
+        font-size: 1.8rem;
+        color: black;
+    }
+
+
+    .counter-container{
+        height:fit-content;
+    }
+
+    .counter-box{
+        width:60%;
+        height:80vh;
+    }
+
+    .counter-btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:5vh;
+    }
+
+    #dec-btn button{
+        border: none;
+        width:100px;
+        height:50px;
+        border-radius: 5px;
+        font-size: xxx-large;
+        background-color: transparent;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #inc-btn button{
+        border: none;
+        width:100px;
+        height:50px;
+        border-radius: 5px;
+        font-size: xxx-large;
+        background-color: transparent;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #inc-btn button:hover{
+        cursor: pointer;
+        color: #ffa8bd;
+    }
+
+    #dec-btn button:hover{
+        cursor: pointer;
+        color: #ffa8bd;
+    }
+
+    #counter-num{
+        font-size: xxx-large;
+        /*font-family: 'Poppins', sans-serif;*/
+        color: white;
+    }
+
+    .counter-heading{
+        color: white;
+        font-size: x-large;
+        /*font-family: 'Poppins', sans-serif;*/
     }
 }
 
@@ -414,16 +735,16 @@ ol {
         font-size: 20px;
     }
     .hobby-img{
-        width:200px;
-        height:200px;
+        width:170px;
+        height:170px;
     }
 
     .hobby-name{
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .hobby-desc{
-        font-size: 20px;
+        font-size: 16px;
     }
     .hobbies{
         gap:50px;
@@ -443,9 +764,83 @@ ol {
     .row{
         width:90%;
     }
+
+    .about{
+        display: flex;
+        height: 90vh;
+        justify-content: center;
+    }
+
+    #about-hayley{
+        grid-row: span 2;
+        background-image: url("../img/hayley1.JPG");
+        height:100vh;
+        width:40%;
+        min-width: 200px;
+    }
+
+    .about-me{
+        width:100%;
+        color:black;
+        margin:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    #about-head{
+        width: 100%;
+        color:black;
+        height:60px;
+        /*background-color: #cccccc;*/
+    }
+
+    .about-area{
+        width: 90%;
+        height:fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+    }
+
+    .about-text{
+        /* display: grid;
+         grid-template-rows: 1fr 4fr;*/
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height:fit-content;
+        width:60%;
+        margin-left: 7vh;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 15px;
+        color:black;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); /* Stronger white highlight */
+    }
+
+    .about-me > div{
+        width:90%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fact-pic{
+
+
+    }
+
+    #fact-heading{
+        font-size: 1.3rem;
+    }
 }
 
-@media (max-width: 800px) and (min-width: 200px){
+@media (max-width: 900px) and (min-width: 200px){
     #heading{
         font-size: 1rem;
     }
@@ -460,10 +855,12 @@ ol {
     .hobby-img{
         width:150px;
         height:150px;
+        min-width: 150px;
+        min-height: 150px;
     }
 
     .hobby-name{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .hobby-desc{
@@ -499,5 +896,179 @@ ol {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+    }
+
+    .about{
+        display: flex;
+        height: 90vh;
+        justify-content: center;
+    }
+
+    #about-hayley{
+        grid-row: span 2;
+        background-image: url("../img/hayley1.JPG");
+        height:100vh;
+        width:40%;
+        min-width: 200px;
+    }
+
+    .about-me{
+        font-size: 12px;
+    }
+
+    #about-head{
+        height:40px;
+    }
+
+    .about-area{
+        width: 90%;
+        height:fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+    }
+
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height:fit-content;
+        width:60%;
+        margin-left: 4vh;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 15px;
+        color:black;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); /* Stronger white highlight */
+    }
+
+    .about-me > div{
+        width:90%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #fact-area{
+        width:65%;
+        min-width:400px;
+    }
+    .fact-pic{
+        display: none;
+
+    }
+
+    #fact-heading{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 790px) and (min-width: 650px){
+    .hobby-img{
+        width:150px;
+        height:150px;
+    }
+
+    .hobby-name{
+        font-size: 2.3rem;
+    }
+
+    .hobby-desc{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 650px) and (min-width: 100px){
+    #heading{
+        font-size: 0.7rem;
+    }
+
+    .header{
+        font-size: large;
+    }
+
+    .about-me{
+        font-size: medium;
+    }
+    .hobby-img{
+        min-width:120px;
+        min-height:120px;
+        width:120px;
+        height:120px;
+    }
+
+    .hobby-name{
+        font-size: 2rem;
+    }
+
+    .hobby-desc{
+        font-size: 14px;
+    }
+    .hobbies{
+        gap:50px;
+        margin-left:20%;
+        margin-right:20%;
+        color: white;
+    }
+
+    .row{
+        min-width:300px;
+    }
+
+
+    ol {
+        font-size: medium;
+    }
+
+    .about-me > div{
+        width:80%;
+
+    }
+
+    .row{
+        width:100%;
+    }
+
+    .fact-pic{
+        width:300px;
+        height:200px;
+    }
+
+    .facts{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about-hayley{
+        display: none;
+    }
+
+    .about-me{
+        font-size: 12px;
+    }
+
+    #about-head{
+        height:20px;
+    }
+
+    .about-area{
+        width: 90%;
+    }
+
+    .about-text{
+        width:100%;
+    }
+
+    .about-me > div{
+        width:90%;
+    }
+
+    .navbtn > a> h2{
+        font-size: 1rem;
     }
 }
